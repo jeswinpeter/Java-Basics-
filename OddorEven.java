@@ -2,7 +2,8 @@
 import java.util.Scanner;
 
 class Check {
-    void input(int n){
+    //Method to check if the input is odd or even
+    void inputCheck(int n){
         if(n % 2 == 0){
             System.out.print(n + " is even");
         }
@@ -14,12 +15,15 @@ class Check {
 
 public class OddorEven {
     public static void main(String[] args) {
+        
         Check toCheck = new Check();
         Scanner scan = new Scanner(System.in);
         
         System.out.println("Enter any number: ");
         int a = scan.nextInt();
-        toCheck.input(a);
+        toCheck.inputCheck(a);
+        
+        scan.close();
     }
 }
 
