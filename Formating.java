@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Formating {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         
         System.out.println("================================");
         for(int i = 0;i < 3; i++){
@@ -12,5 +12,6 @@ public class Formating {
         }
         System.out.println("================================");
 
+        scan.close();
     }
 }
