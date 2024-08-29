@@ -1,3 +1,4 @@
+//This code generates a number pattern using 2d array
 public class Arayy {
     public static void main(String[] args){
         int[][] numb = new int[5][];
@@ -8,17 +9,15 @@ public class Arayy {
         numb[4] = new int[5];
         int i,j;
         int k = 0;
+
+            //Loop to make and print the generated pattern
             for (i=0;i<5;i++){
                 for (j=0;j<i+1;j++){
-                 numb[i][j] = k;
-                 k++;
+                    numb[i][j] = k;
+                    System.out.print(numb[i][j] + " " );
+                    k++;
                 }
+                System.out.println();
             }
-        for(i = 0; i < 5;i++){
-            for (j=0;j<i+1;j++){
-                System.out.print(numb[i][j] + " " );
-            }
-            System.out.println();
-        }
     }
 }
