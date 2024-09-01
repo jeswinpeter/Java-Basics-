@@ -7,7 +7,7 @@ public class Array2 {
         System.out.println("Enter size of the Array: ");
         int size = scan.nextInt();
 
-        int array[] = new int[n];
+        int array[] = new int[size];
 
         System.out.println("Enter elements to the Array: ");
         for(int j = 0; j < size; j++) {
