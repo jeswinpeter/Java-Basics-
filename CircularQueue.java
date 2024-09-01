@@ -6,9 +6,11 @@
     void enqueue(value) {
         System.out.println("Can't enqueue -> The Queue is full!!!");
     }
+    
     void dequeue() {
         System.out.println("Can't dequeue -> The Queue is empty!!!");
     }
+    
     void displa() {
         System.out.println(----------Queue----------);
         System.out.println(----------Queue----------);
