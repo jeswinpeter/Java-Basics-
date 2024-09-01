@@ -1,7 +1,7 @@
 //This code implements the concept of inheritance(Hierarchical) and parameterised constructor 
 import java.util.Scanner;
 
-//Superclass
+//==== Superclass ====
 class Employee {
     String name;
     int age;
@@ -18,6 +18,7 @@ class Employee {
         this.salary = salary;
     }
 
+    //Method to display details using formated print
     void display() {
         System.out.printf("| Name            ->%12s   |%n",name);
         System.out.printf("| Age             ->%12d   |%n",age);
@@ -27,7 +28,7 @@ class Employee {
     }
 }
 
-//Subclass 1
+//==== Subclass 1 ====
 class Officer extends Employee {
     String specialization;
 
@@ -43,7 +44,7 @@ class Officer extends Employee {
     }
 }
 
-//Subclass 2
+//==== Subclass 2 ====
 class Manager extends Employee {
     String department;
 
