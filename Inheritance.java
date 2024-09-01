@@ -16,8 +16,7 @@ class Employee {
         this.salary = salary;
     }
 
-    void display() {      // specialization
-                          // department
+    void display() {
         System.out.printf("| Name            ->%12s   |%n",name);
         System.out.printf("| Age             ->%12d   |%n",age);
         System.out.printf("| Phone_no        ->%12d   |%n",phone_no);
@@ -52,7 +51,6 @@ class Manager extends Employee {
 
     void disp_dep() {
         System.out.printf("| Department      ->%12s   |%n",department);
-                         // --------------------------------
         System.out.println("------------------------------------\n");
     }
 }
