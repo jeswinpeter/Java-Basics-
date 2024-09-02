@@ -1,3 +1,4 @@
+//This code impiments Circular Queue
 import java.util.Scanner;
 
 class Functions{
