@@ -1,3 +1,4 @@
+//This code impiments Circular Queue
 import java.util.Scanner;
 
 class Functions{
@@ -21,12 +22,20 @@ class Functions{
             Queue[rear] = value;
         }
     }
+    
     void dequeue() {
         System.out.println("Can't dequeue -> The Queue is empty!!!");
     }
+<<<<<<< HEAD
     void display() {
         System.out.println("----------Queue----------");
         System.out.println("----------Queue----------");
+=======
+    
+    void displa() {
+        System.out.println(----------Queue----------);
+        System.out.println(----------Queue----------);
+>>>>>>> cfa2b4116ff690334fd521bd8b7c724715ec1b3d
     }
 }
 public class CircularQueue {

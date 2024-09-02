@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class SymmetryTest {
     public static void main(String[] args) {
 
+        //Creating object for scanner class
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Enter order of the matrix[m X n] -> ");
@@ -36,7 +37,7 @@ public class SymmetryTest {
             }
         }
 
-        //Result
+        //===== Result =====
         if(m != n || flag == 1)
             System.out.println("The matrix is not Symmetric!!!");
         else
