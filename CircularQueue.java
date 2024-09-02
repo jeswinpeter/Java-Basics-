@@ -1,4 +1,4 @@
-//This code impiments Circular Queue
+//This code impliments Circular Queue
 import java.util.Scanner;
 
 class Functions{
@@ -6,17 +6,16 @@ class Functions{
     int [] Queue = new int[Max_size];
     int front = -1;
     int rear = -1;
+
     void enqueue(int value) {
         if(front == -1 && rear == -1) {
             front = 0;
             rear = 0;
             Queue[rear] = value;
         }
-
         else if ((rear + 1)  % Max_size == front) {
             System.out.println("Can't enqueue -> The Queue is full!!!");
         }
-
         else {
             rear = (rear + 1) % Max_size;
             Queue[rear] = value;
@@ -24,13 +23,37 @@ class Functions{
     }
 
     void dequeue() {
-        System.out.println("Can't dequeue -> The Queue is empty!!!");
+        if(front == -1 && rear == -1) {
+            System.out.println("Can't dequeue -> The Queue is empty!!!");
+        }
+        else if(front == rear) {
+            System.out.println(Queue[front] + " is Dequeued");
+            front = -1;
+            rear = -1;
+        }
+        else{
+            System.out.println(Queue[front] + " is Dequeued");
+            front = (front+1) % Max_size;
+        }
     }
 
     void display() {
-        System.out.println("----------Queue----------");
-        System.out.println("----------Queue----------");
+        if(front == -1 && rear == -1) {
+            System.out.println("Can't Display -> The Queue is empty!!!");
+        }
+        else {
+            System.out.println("----------Queue----------");
+            int i = front;
+            while(i != rear) {
+                System.out.print(Queue[i]+"\t");
+                i = (i + 1) % Max_size;
+            }
+            System.out.print(Queue[rear]+"\n");
+            System.out.println("----------Queue----------");
+        }
     }
+}
+
 public class CircularQueue {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -72,9 +95,7 @@ public class CircularQueue {
 
                 default:
                     System.out.println("Error!!!!\nEnter a valid input");
-
             }
-
         }
     }
 }
