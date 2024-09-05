@@ -1,12 +1,14 @@
-//This code impliments Circular Queue
+//This code impliments basic circcular Circular Queue Algorithm
 import java.util.Scanner;
 
+//The operations for the Queue are defined in the class Functions
 class Functions{
     int Max_size = 6;
     int [] Queue = new int[Max_size];
     int front = -1;
     int rear = -1;
 
+    //Enqueue operation adds input value to rear position of the Queue
     void enqueue(int value) {
         if(front == -1 && rear == -1) {
             front = 0;
@@ -22,6 +24,7 @@ class Functions{
         }
     }
 
+    //Dequeue operations removes element from front position
     void dequeue() {
         if(front == -1 && rear == -1) {
             System.out.println("Can't dequeue -> The Queue is empty!!!");
@@ -37,6 +40,7 @@ class Functions{
         }
     }
 
+    //Displays elements in the Queue from front to rear
     void display() {
         if(front == -1 && rear == -1) {
             System.out.println("Can't Display -> The Queue is empty!!!");
@@ -56,12 +60,12 @@ class Functions{
 
 public class CircularQueue {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int option;
+        Scanner scan = new Scanner(System.in);      //Scanner class object
+        int option;             //Variable for the input choice
         int value;
-        int check = 1;
+        int check = 1;          //Variable to run the while loop
 
-        Functions todo = new Functions();
+        Functions todo = new Functions();   //Creating object for the class Function
 
         //Menu
         System.out.println("The operations that can be performed on a Circular Queue are listed below :");
@@ -72,28 +76,28 @@ public class CircularQueue {
 
         while (check == 1) {
             System.out.println("Enter function no. to be performed -> ");
-            option = scan.nextInt();
+            option = scan.nextInt();    //Takes option number entered by the user
             switch (option) {
-                case 1:
+                case 1:                 //Enqueue operation
                     System.out.println("Enter number to Enque -> ");
                     value = scan.nextInt();
                     todo.enqueue(value);
                     break;
 
-                case 2:
+                case 2:                 //Dequeue operation
                     todo.dequeue();
                     break;
 
-                case 3:
+                case 3:                 //Display operation
                     todo.display();
                     break;
 
-                case 4:
+                case 4:                 //Exit
                     System.out.println("==== Exiting!!! ====");
                     check = 2;
                     break;
 
-                default:
+                default:                //Invalid input
                     System.out.println("Error!!!!\nEnter a valid input");
             }
         }
