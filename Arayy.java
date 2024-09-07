@@ -1,6 +1,8 @@
+//LEVEL 00
 //This code generates a number pattern using 2d array
 public class Arayy {
     public static void main(String[] args){
+        
         int[][] numb = new int[5][];
         numb[0] = new int[1];
         numb[1] = new int[2];

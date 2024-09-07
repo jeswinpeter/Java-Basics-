@@ -1,3 +1,5 @@
+//LEVEL 00
+//This code prints an Array in a Formated form
 import java.util.*;
 
 public class Array2 {
