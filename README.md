@@ -1,2 +1,2 @@
-This is a repository with very basic Java codes. 
-//Difficulty level is indicated in brackets 
+# **BASIC JAVA CODES** 
+//_Difficulty level is indicated in brackets_ 
