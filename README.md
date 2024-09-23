@@ -2,7 +2,7 @@
 
 <p>
     <a href="https://www.java.com/en/">
-        <img src="https://lordicon.com/icons/wired/lineal/1323-java-code-language">
+        <img src="https://github.com/jeswinpeter/HTML-CSS/blob/main/IMAGES/Java%20gif.gif">
     </a>
 </p>
 
