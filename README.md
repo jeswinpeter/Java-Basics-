@@ -6,7 +6,6 @@
     </a>
 </p>
 
-This repository contains some basic java programs.
+### This repository contains some basic java programs.
 
-
-//_Difficulty level is indicated in brackets_ 
+### _Difficulty level is indicated in brackets_ 
